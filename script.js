@@ -15,7 +15,8 @@ const skills = [
     { n: 'Arduino', i: dv('arduino'), d: 'Sensors, actuators and microcontroller programming.' },
     { n: 'ESP32', i: dv('esp32'), d: 'Wi-Fi enabled IoT boards, sending sensor data to apps and the cloud.' },
     { n: 'Android', i: dv('android'), d: 'Native Android apps with Java, activities, adapters and Firebase.' },
-    { n: 'Database', i: dv('database'), d: 'Relational and NoSQL modelling, ER diagrams and data integrity.' }
+    { n: 'Database', i: dv('database'), d: 'Relational and NoSQL modelling, ER diagrams and data integrity.' },
+    { n: 'Git / GitHub', i: dv('git'), d: 'Version control with Git, source code hosting on GitHub and publishing sites with GitHub Pages.' }
 ];
 
 const ides = [
@@ -47,13 +48,13 @@ const projects = [
     },
     {
         t: 'AgroLink Android App',
-        tg: ['Android', 'Firebase', 'NoSQL'],
-        s: 'Farmers sell directly to customers, removing the middle man. Includes separate Admin and Customer apps.',
+        tg: ['Android', 'Java', 'Firebase'],
+        s: 'Android apps that help farmers sell their products directly to customers, without a middle man. Includes a separate Farmer app and Customer app.',
         f: [
-            'Admin app and Customer app',
-            'Firebase realtime database',
+            'Farmer app and Customer app',
             'Direct farmer-to-customer sales',
-            'Order management'
+            'Built with Java for Android',
+            'Firebase backend'
         ],
         demo: ''
     },
@@ -71,25 +72,25 @@ const projects = [
     },
     {
         t: 'Driver Monitoring System',
-        tg: ['Python', 'Arduino IDE', 'ESP32'],
-        s: 'IoT system that monitors driver condition with sensors on an ESP32 and raises alerts for unsafe behavior.',
+        tg: ['Python', 'MediaPipe', 'ESP32'],
+        s: 'IoT prototype that shows the driver’s state with LED lights, to help detect tired or distracted driving. A camera checks the face and eyes, and an ESP32 shows the result.',
         f: [
-            'ESP32 sensor input',
-            'Python processing',
-            'Real-time alerts',
-            'Arduino firmware'
+            'Camera checks face and eyes (Python and MediaPipe)',
+            'ESP32-S3 shows the driver state with LED lights',
+            'Green = normal, blue = eyes glancing aside',
+            'Yellow = looking away, red = eyes closed'
         ],
         demo: ''
     },
     {
-        t: 'BCD II Website',
-        tg: ['Jakarta EE', 'Java', 'Web'],
-        s: 'Supply chain management web application built on Jakarta EE for a university assignment.',
+        t: 'GlobalTrade Supply Chain System',
+        tg: ['Jakarta EE', 'EJB', 'MySQL'],
+        s: 'Web system that manages the supply chain work of a logistics company: shipments, vendors, inventory, orders, routes and customs documents. Built for the BCD II academic project.',
         f: [
-            'Layered architecture',
-            'Design patterns',
-            'Role based access',
-            'Database driven'
+            'MySQL database: Shipment, Vendor, Inventory, Order, Route, Customs Document, User/Role',
+            'EJB timers, interceptors and transactions',
+            'Role-based access control',
+            'JSP/JSTL web layer with EJB business layer (MVC-style), deployed on Payara 6'
         ],
         demo: ''
     }
@@ -136,7 +137,7 @@ const education = [
             {
                 show: true,
                 n: 'BEng in Software Engineering',
-                inst: '',
+                inst: 'JIAT (IIC University)',
                 period: 'Since Apr 2023',
                 status: 'Ongoing'
             },

@@ -333,7 +333,7 @@ h2 span {
     transform: translate(-50%, -50%);
     width: min(1150px, 92vw);
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     gap: 44px 24px
 }
 
@@ -713,6 +713,10 @@ footer .lk a:hover {
         grid-template-columns: repeat(3, 1fr);
         gap: 22px 10px;
         top: 58%
+    }
+
+    .skgrid .sk:last-child:nth-child(3n + 1) {
+        grid-column: 2
     }
 
     .sk .ic {
