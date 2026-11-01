@@ -142,7 +142,7 @@ const education = [
                 status: 'Ongoing'
             },
             {
-                show: true,
+                show: false,
                 n: 'BSc (Hons) Cloud Computing',
                 inst: 'SLTC',
                 period: 'Since Jun 2026',
